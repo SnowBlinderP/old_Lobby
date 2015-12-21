@@ -1,0 +1,54 @@
+name: Lobby-System
+version: 0.0.1
+author: p_double
+description: Minedust.net - Lobby-System
+website: https://www.minedust.net
+main: net.minedust.system.lobby.plugin.Main
+database: false
+
+# depend: [PermissionsEx]
+softdepend: [Vault]
+
+commands:
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   Spieler Befehle                    | #
+# +------------------------------------------------------+ #
+############################################################
+
+  Minetaler:
+    usage: /Minetaler [Spieler]
+    description: Zeigt die Minetaler eines Spielers.
+
+############################################################
+# +------------------------------------------------------+ #
+# |                    Team Befehle                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+  Broadcast:
+    usage: /Broadcast <Nachricht>
+    description: Kündigt eine Nachricht über den Automessager an.
+    aliases: [am, say]
+
+  Clearchat:
+    usage: /Clearchat
+    description: Löscht den Server Chat.
+    aliases: [cc]
+
+  Fly:
+    usage: /Fly
+    description: Aktiviert | Deaktiviert den Flugmodus.
+    aliases: [flugmodus]
+
+  Gamemode:
+    usage: /Gamemode <Spielmodus>
+    description: Setzt den Spielmodus
+    aliases: [gm, spielmodus]
+
+############################################################
+# +------------------------------------------------------+ #
+# |                    System Befehle                    | #
+# +------------------------------------------------------+ #
+############################################################
